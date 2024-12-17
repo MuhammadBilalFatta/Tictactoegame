@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+   --main-bg-color:#548687 ;
+   --second-bg-color:#b0413e;
+   --text-color:#ffff;
+    --bg-color:#191913;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    font-size: 8vmin;
+    color:var(--second-bg-color);
+    background-color: var(--text-color);
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color:var(--bg-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color:var(--bg-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#msg{
+    color: var(--text-color);
+    font-size: 5vmin;
+}
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: var(--main-bg-color);
+    }
+    .msg-container{
+        height: 100vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6rem;
+    }   
+
+    .hide{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    body {
+      background-color:var(--main-bg-color);
+    }
+    .msg-container{
+        height: 100vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6rem;
+        /* font-size: 10vmin; */
+    }   
+
+    .hide{
+        display: nonex ;
+    }
+  }
